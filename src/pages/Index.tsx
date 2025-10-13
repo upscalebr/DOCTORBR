@@ -1,4 +1,5 @@
 import { Hero } from "@/components/Hero";
+import Header from "@/components/Header";
 import { Problem } from "@/components/Problem";
 import { IzaSolution } from "@/components/IzaSolution";
 import { AntiNoShow } from "@/components/AntiNoShow";
@@ -11,6 +12,7 @@ import { FinalCTA } from "@/components/FinalCTA";
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <Header />
       <Hero />
       <Problem />
       <IzaSolution />
