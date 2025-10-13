@@ -35,28 +35,26 @@ export const FAQ = () => {
   ];
 
   return (
-    <section className="py-20 px-4">
-      <div className="container mx-auto max-w-4xl">
-        <div className="text-center mb-16 space-y-4 animate-fade-in">
-          <div className="inline-flex items-center gap-2 glass-card px-4 py-2 text-sm font-medium mb-4">
+    <section className="py-10 sm:py-20 px-2 sm:px-4">
+      <div className="container mx-auto max-w-2xl sm:max-w-4xl">
+        <div className="text-center mb-8 sm:mb-16 space-y-4 animate-fade-in">
+          <div className="inline-flex items-center gap-2 glass-card px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium mb-2 sm:mb-4">
             <HelpCircle className="w-4 h-4 text-primary" />
             <span>Perguntas Frequentes</span>
           </div>
-          
-          <h2 className="text-4xl md:text-5xl font-bold">
+          <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold">
             Toda Dúvida Merece{" "}
             <span className="gradient-text">Transparência</span>.
           </h2>
         </div>
-
-        <div className="glass-card p-8 animate-fade-in">
+        <div className="glass-card p-4 sm:p-8 animate-fade-in">
           <Accordion type="single" collapsible className="w-full">
             {faqs.map((faq, index) => (
               <AccordionItem key={index} value={`item-${index}`}>
-                <AccordionTrigger className="text-left text-lg font-semibold hover:text-primary transition-colors">
+                <AccordionTrigger className="text-left text-base sm:text-lg font-semibold hover:text-primary transition-colors">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground leading-relaxed">
+                <AccordionContent className="text-xs sm:text-base text-muted-foreground leading-relaxed">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>

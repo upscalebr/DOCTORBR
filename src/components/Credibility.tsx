@@ -24,7 +24,7 @@ export const Credibility = () => {
   ];
 
   return (
-    <section className="py-20 px-4 relative overflow-hidden">
+    <section className="py-10 sm:py-20 px-2 sm:px-4 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-secondary/20 via-background to-background -z-10" />
       
       <div className="container mx-auto max-w-7xl">
@@ -40,7 +40,7 @@ export const Credibility = () => {
         </div>
 
         {/* Stats Grid */}
-        <div className="grid md:grid-cols-3 gap-6 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 mb-10 sm:mb-16">
           {stats.map((stat, index) => (
             <div
               key={index}
