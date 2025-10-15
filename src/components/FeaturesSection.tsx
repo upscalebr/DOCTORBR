@@ -164,13 +164,13 @@ const FeaturesSection = () => {
                   <div className="bg-white/10 backdrop-blur-sm border-b border-white/20 p-4 flex items-center space-x-3">
                     <div className="w-8 h-8 rounded-full overflow-hidden flex-shrink-0">
                       <img 
-                        src="https://i.pinimg.com/736x/b1/aa/73/b1aa73786a14bf19fb208dfbf90488e5.jpg" 
-                        alt="Sua Clínica" 
+                        src="https://randomuser.me/api/portraits/women/44.jpg" 
+                        alt="Mariana" 
                         className="w-full h-full object-cover"
                       />
                     </div>
                     <div>
-                      <p className="text-sm font-medium text-gray-800">Sua Clínica</p>
+                      <p className="text-sm font-medium text-gray-800">Mariana</p>
                       <p className="text-xs text-gray-600">Online agora</p>
                     </div>
                   </div>
@@ -328,32 +328,20 @@ const FeaturesSection = () => {
                 <div className="bg-white/10 backdrop-blur-sm border-b border-white/20 p-4 flex items-center space-x-3">
                   <div className="w-8 h-8 rounded-full overflow-hidden flex-shrink-0">
                     <img 
-                      src="https://i.pinimg.com/736x/b1/aa/73/b1aa73786a14bf19fb208dfbf90488e5.jpg" 
-                      alt="Atendimento Barbearia" 
+                      src="https://randomuser.me/api/portraits/women/65.jpg" 
+                      alt="Luana" 
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <div>
-                    <p className="text-sm font-medium text-gray-800">Atendimento Barbearia</p>
+                    <p className="text-sm font-medium text-gray-800">Luana</p>
                     <p className="text-xs text-gray-600">Online agora</p>
                   </div>
                 </div>
-
                 {/* Chat Messages Area */}
                 <div ref={chat2.messagesContainerRef} className="p-4 space-y-3 h-48 overflow-y-auto chat-scroll scroll-smooth">
-                  
-                  {/* Cliente Message 1 */}
-                    {chat2.visibleMessages[0] && (
-                    <div className="flex items-start space-x-3 justify-end animate-fade-in-up">
-                      <div className="liquid-glass-message bg-gradient-to-r from-primary/30 to-accent/30 border border-primary/40 rounded-2xl rounded-tr-sm p-3 max-w-xs shadow-lg">
-                        <p className="text-xs text-gray-800 italic">Poxa, queria cortar o cabelo amanhã, mas será que tem vaga? Já é tarde pra ligar e no site os horários não coincidem com o que eu posso...</p>
-                      </div>
-                      <div className="w-5 h-5 bg-gradient-to-br from-primary to-accent rounded-full flex-shrink-0"></div>
-                    </div>
-                  )}
-
-                  {/* Bot Message 1 */}
-                    {chat2.visibleMessages[1] && (
+                  {/* Iza 1 */}
+                  {chat2.visibleMessages[0] && (
                     <div className="flex items-start space-x-3 animate-fade-in-up">
                       <div className="w-5 h-5 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center flex-shrink-0">
                         <img 
@@ -363,23 +351,21 @@ const FeaturesSection = () => {
                         />
                       </div>
                       <div className="liquid-glass-message bg-white/30 border border-white/40 rounded-2xl rounded-tl-sm p-3 max-w-xs shadow-lg">
-                        <p className="text-xs text-gray-800">Olá! 😊 Sim, temos alguns horários disponíveis para amanhã. Qual seria sua preferência (manhã/tarde) e o serviço desejado?</p>
+                        <p className="text-xs text-gray-800">Olá, Luana, tudo bem?<br/><br/>Passando aqui só para lembrar que amanhã (26/08) às 14:00 tem uma consulta agendada conosco para a área de ortopedia.<br/><br/>Endereço: Rua teste, 123<br/>Bairro: Bela Vista - SP<br/><br/>Até amanhã! Obrigada!</p>
                       </div>
                     </div>
                   )}
-
-                  {/* Cliente Message 2 */}
-                    {chat2.visibleMessages[2] && (
+                  {/* Luana 1 */}
+                  {chat2.visibleMessages[1] && (
                     <div className="flex items-start space-x-3 justify-end animate-fade-in-up">
                       <div className="liquid-glass-message bg-gradient-to-r from-primary/30 to-accent/30 border border-primary/40 rounded-2xl rounded-tr-sm p-3 max-w-xs shadow-lg">
-                        <p className="text-xs text-gray-800">Queria cortar só o cabelo, na parte da manhã, tipo umas 10h ou 11h.</p>
+                        <p className="text-xs text-gray-800">Oi Iza, tudo bem? Acabei de perceber que não vou conseguir ir.</p>
                       </div>
                       <div className="w-5 h-5 bg-gradient-to-br from-primary to-accent rounded-full flex-shrink-0"></div>
                     </div>
                   )}
-
-                  {/* Bot Message 2 */}
-                    {chat2.visibleMessages[3] && (
+                  {/* Iza 2 */}
+                  {chat2.visibleMessages[2] && (
                     <div className="flex items-start space-x-3 animate-fade-in-up">
                       <div className="w-5 h-5 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center flex-shrink-0">
                         <img 
@@ -389,23 +375,21 @@ const FeaturesSection = () => {
                         />
                       </div>
                       <div className="liquid-glass-message bg-white/30 border border-white/40 rounded-2xl rounded-tl-sm p-3 max-w-xs shadow-lg">
-                        <p className="text-xs text-gray-800">Perfeito! Verificando a agenda... Temos um horário às 10:45 para corte de cabelo com o barbeiro Leo. Essa opção te atende?</p>
+                        <p className="text-xs text-gray-800">Tudo bem, Lu! Que bom que você avisou! Sem problemas, já entendi que você precisa remarcar. Podemos verificar um novo dia e horário para você.</p>
                       </div>
                     </div>
                   )}
-
-                  {/* Cliente Message 3 */}
-                    {chat2.visibleMessages[4] && (
+                  {/* Luana 2 */}
+                  {chat2.visibleMessages[3] && (
                     <div className="flex items-start space-x-3 justify-end animate-fade-in-up">
                       <div className="liquid-glass-message bg-gradient-to-r from-primary/30 to-accent/30 border border-primary/40 rounded-2xl rounded-tr-sm p-3 max-w-xs shadow-lg">
-                        <p className="text-xs text-gray-800">Show! 10:45 está ótimo!</p>
+                        <p className="text-xs text-gray-800">Ótimo! Poderia me ajudar?</p>
                       </div>
                       <div className="w-5 h-5 bg-gradient-to-br from-primary to-accent rounded-full flex-shrink-0"></div>
                     </div>
                   )}
-
-                  {/* Bot Message 3 */}
-                    {chat2.visibleMessages[5] && (
+                  {/* Iza 3 */}
+                  {chat2.visibleMessages[4] && (
                     <div className="flex items-start space-x-3 animate-fade-in-up">
                       <div className="w-5 h-5 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center flex-shrink-0">
                         <img 
@@ -415,23 +399,21 @@ const FeaturesSection = () => {
                         />
                       </div>
                       <div className="liquid-glass-message bg-white/30 border border-white/40 rounded-2xl rounded-tl-sm p-3 max-w-xs shadow-lg">
-                        <p className="text-xs text-gray-800">Excelente! Para confirmar, por favor, me informe seu nome completo e um número de telefone para contato.</p>
+                        <p className="text-xs text-gray-800">Claro! A sua consulta era com o Doutor Rodrigo, certo? Ele tem horários disponíveis na próxima quarta-feira, dia 03/09, às 14h ou às 16h. Qual seria a sua preferência?</p>
                       </div>
                     </div>
                   )}
-
-                  {/* Cliente Message 4 */}
-                    {chat2.visibleMessages[6] && (
+                  {/* Luana 3 */}
+                  {chat2.visibleMessages[5] && (
                     <div className="flex items-start space-x-3 justify-end animate-fade-in-up">
                       <div className="liquid-glass-message bg-gradient-to-r from-primary/30 to-accent/30 border border-primary/40 rounded-2xl rounded-tr-sm p-3 max-w-xs shadow-lg">
-                        <p className="text-xs text-gray-800">Carlos Silva, (79) 99999-1234</p>
+                        <p className="text-xs text-gray-800">Perfeito! Pode ser às 16h.</p>
                       </div>
                       <div className="w-5 h-5 bg-gradient-to-br from-primary to-accent rounded-full flex-shrink-0"></div>
                     </div>
                   )}
-
-                  {/* Bot Message 4 */}
-                    {chat2.visibleMessages[7] && (
+                  {/* Iza 4 */}
+                  {chat2.visibleMessages[6] && (
                     <div className="flex items-start space-x-3 animate-fade-in-up">
                       <div className="w-5 h-5 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center flex-shrink-0">
                         <img 
@@ -441,39 +423,12 @@ const FeaturesSection = () => {
                         />
                       </div>
                       <div className="liquid-glass-message bg-white/30 border border-white/40 rounded-2xl rounded-tl-sm p-3 max-w-xs shadow-lg">
-                        <p className="text-xs text-gray-800">Obrigado, Carlos! Seu corte de cabelo para amanhã às 10:45 com Leo está confirmado. Você receberá um lembrete por SMS. Mais alguma dúvida?</p>
+                        <p className="text-xs text-gray-800">Consulta remarcada, Luana! Seu novo horário com o Doutor Rodrigo é na quarta-feira, 03 de setembro, às 16h.<br/><br/>Qualquer coisa, é só me chamar por aqui. Tenha um ótimo dia!</p>
                       </div>
                     </div>
                   )}
-
-                  {/* Cliente Message 5 */}
-                    {chat2.visibleMessages[8] && (
-                    <div className="flex items-start space-x-3 justify-end animate-fade-in-up">
-                      <div className="liquid-glass-message bg-gradient-to-r from-primary/30 to-accent/30 border border-primary/40 rounded-2xl rounded-tr-sm p-3 max-w-xs shadow-lg">
-                        <p className="text-xs text-gray-800">Não, tudo certo! Valeu!</p>
-                      </div>
-                      <div className="w-5 h-5 bg-gradient-to-br from-primary to-accent rounded-full flex-shrink-0"></div>
-                    </div>
-                  )}
-
-                  {/* Bot Message 5 - Final */}
-                    {chat2.visibleMessages[9] && (
-                    <div className="flex items-start space-x-3 animate-fade-in-up">
-                      <div className="w-5 h-5 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center flex-shrink-0">
-                        <img 
-                          src="https://storage.googleapis.com/msgsndr/bwIqmcdNeNlOPKQFF6DF/media/68a56d77f0f9c3eab11cd7d4.png" 
-                          alt="IA Icon" 
-                          className="w-2.5 h-2.5"
-                        />
-                      </div>
-                      <div className="liquid-glass-message bg-white/30 border border-white/40 rounded-2xl rounded-tl-sm p-3 max-w-xs shadow-lg">
-                        <p className="text-xs text-gray-800">Por nada! Aguardamos você amanhã na Barbearia Alpha! Tenha um ótimo dia!</p>
-                      </div>
-                    </div>
-                  )}
-
                   {/* Typing Indicator Final */}
-                    {chat2.visibleMessages[10] && (
+                  {chat2.visibleMessages[7] && (
                     <div className="flex items-start space-x-3 animate-fade-in-up">
                       <div className="w-5 h-5 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center flex-shrink-0">
                         <img 
@@ -491,7 +446,6 @@ const FeaturesSection = () => {
                       </div>
                     </div>
                   )}
-
                 </div>
 
               </div>
