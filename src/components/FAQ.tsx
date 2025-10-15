@@ -54,7 +54,7 @@ export const FAQ = () => {
                 value={`item-${index}`}
                 className="glass-card border-none overflow-hidden"
               >
-                <AccordionTrigger className="flex items-center justify-between w-full px-6 py-5 text-base sm:text-lg font-semibold hover:text-primary transition-colors no-underline hover:no-underline active:no-underline">
+                <AccordionTrigger className="flex items-center justify-between w-full px-6 py-5 text-base sm:text-lg font-semibold text-black hover:text-black focus:text-black transition-colors no-underline hover:no-underline active:no-underline">
                   <span className="text-left w-full">{faq.question}</span>
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-5 text-muted-foreground text-sm sm:text-base leading-relaxed">

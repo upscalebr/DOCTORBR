@@ -23,16 +23,21 @@ export const IzaSolution = () => {
   <div className="mx-auto max-w-2xl sm:max-w-3xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl px-4 sm:px-6 md:px-8">
         <div className="text-center mb-4 sm:mb-8 space-y-2 animate-fade-in">
             <div className="mb-10 sm:mb-16 space-y-4 animate-fade-in flex flex-col items-center text-center">
-              <div className="inline-flex items-center gap-2 glass-card px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium mb-4 mx-auto">
+              <div className="inline-flex items-center gap-2 glass-card px-3 sm:px-4 py-2 text-xs sm:text-sm mt-4 font-medium mb-0 mx-auto">
                 <img src="https://cdn.prod.website-files.com/6881f4248da03c548282df55/6881fd84dd0fd235f708eb52_Sparkle.svg" alt="Sparkle" className="w-4 h-4" />
                 <span className="text-[#8B5CF6]">Solução 24/7</span>
               </div>
-              <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold px-2 sm:px-0 mx-auto">
-                Aumente a conversão da sua clínica sem contratar mais gente.
+              <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold px-8 sm:px-0 mx-auto">
+                Aumente a conversão da sua clínica sem precisar contratar mais pessoas.
               </h2>
-              <p className="text-base sm:text-xl text-muted-foreground max-w-3xl mx-auto ">
-                Automatize o atendimento, humanize a comunicação e transforme seu WhatsApp em uma máquina de agendamentos.
+              <p className="text-base sm:text-xl text-muted-foreground max-w-3xl mx-auto mb-12">
+                Automatize o atendimento, humanize a comunicação e transforme seu WhatsApp e seu Instagram em uma máquina de agendamentos.
               </p>
+              <img
+                src="https://i.imgur.com/0tT7SvA.png"
+                alt="Demonstração Doctoriza"
+                className="mx-auto my-6 w-full max-w-xl rounded-xl shadow-lg"
+              />
             </div>
         </div>
         {/* Conteúdo removido, mantendo apenas o botão abaixo */}
