@@ -19,20 +19,18 @@ export const IzaSolution = () => {
   return (
     <section className="py-10 sm:py-20 px-2 sm:px-4 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-secondary/20 to-background -z-10" />
-      <div className="container mx-auto max-w-7xl">
+  {/* Margens laterais mais estreitas e largura máxima reduzida para texto mais fluido, seguindo o padrão do site de referência */}
+  <div className="mx-auto max-w-2xl sm:max-w-3xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl px-4 sm:px-6 md:px-8">
         <div className="text-center mb-10 sm:mb-16 space-y-4 animate-fade-in">
           <div className="inline-flex items-center gap-2 glass-card px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium mb-4">
             <MessageCircle className="w-4 h-4 text-primary" />
             <span>Solução 24/7</span>
           </div>
           <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold">
-            Sua Clínica{" "}
-            <span className="gradient-text">NUNCA Mais Perderá</span>{" "}
-            um Paciente por Telefone Ocupado.
+            Aumente a conversão da sua clínica sem contratar mais gente.
           </h2>
           <p className="text-base sm:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Conheça a Iza, a Assistente Concierge que trabalha 24 horas por dia, 
-            7 dias por semana, cuidando do paciente com empatia e contexto clínico.
+            Automatize o atendimento, humanize a comunicação e transforme seu WhatsApp em uma máquina de agendamentos.
           </p>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center mb-8 sm:mb-12">
@@ -86,13 +84,10 @@ export const IzaSolution = () => {
             ))}
           </div>
         </div>
-        {/* CTAs */}
-        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center animate-fade-in w-full">
+        {/* CTA Único */}
+        <div className="flex justify-center items-center animate-fade-in w-full mt-6">
           <Button size="lg" className="text-base sm:text-lg w-full sm:w-auto">
-            Veja a Iza em Ação (Teste Agora)
-          </Button>
-          <Button size="lg" variant="outline" className="text-base sm:text-lg w-full sm:w-auto">
-            Fale com Nossos Especialistas
+            Quero aumentar minha conversão
           </Button>
         </div>
       </div>

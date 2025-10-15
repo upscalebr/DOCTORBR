@@ -5,7 +5,8 @@ export const FinalCTA = () => {
   return (
     <section className="py-10 sm:py-20 px-2 sm:px-4 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-accent/10 to-background -z-10" />
-      <div className="container mx-auto max-w-2xl sm:max-w-5xl">
+         {/* Margens laterais mais estreitas e largura máxima reduzida para texto mais fluido, seguindo o padrão do site de referência */}
+         <div className="mx-auto max-w-2xl sm:max-w-3xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl px-4 sm:px-6 md:px-8">
         <div className="glass-card p-4 sm:p-12 md:p-16 text-center space-y-6 sm:space-y-8 relative overflow-hidden animate-fade-in">
           {/* Decorative elements */}
           <div className="absolute top-0 right-0 w-32 h-32 sm:w-64 sm:h-64 bg-primary/5 rounded-full blur-3xl -z-10" />

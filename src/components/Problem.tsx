@@ -1,88 +1,104 @@
-import { TrendingDown, MessageCircleOff, CalendarX } from "lucide-react";
+import { X, Clock, Users, HelpCircle, Star } from "lucide-react";
 import revenueLeakImage from "@/assets/revenue-leak.jpg";
 
 export const Problem = () => {
   const leaks = [
     {
-      icon: TrendingDown,
-      title: "O Paciente Frio",
-      description: "O lead chega do anúncio e esfria. Se sua clínica demorar mais que 3 minutos para responder, ele agenda no concorrente. A perda é imediata e silenciosa.",
-      stat: "80% dos leads",
+      icon: X,
+      title: "Pacientes ignorados no WhatsApp",
+      description: "Mensagens demoram a ser respondidas ou se perdem no meio do volume. Você investe em marketing, mas quando os interessados chegam, não tem um atendimento rápido e eficiente para converter.",
     },
     {
-      icon: MessageCircleOff,
-      title: "O Caos da Planilha",
-      description: "Sua secretária se perde no WhatsApp, não sabe quem ligou primeiro ou quem precisa de follow-up. O caos nas conversas faz a receita vazar.",
-      stat: "40% do tempo perdido",
+      icon: Clock,
+      title: "Atendimento só em horário comercial",
+      description: "A clínica fecha às 18h, mas os pacientes continuam mandando mensagens à noite e nos fins de semana. Sem resposta, muitos procuram o concorrente.",
     },
     {
-      icon: CalendarX,
-      title: "A Cadeira Vazia",
-      description: "A falta de lembretes automáticos e a falha humana resultam na cadeira vazia. O custo de um no-show é mais alto do que você imagina.",
-      stat: "R$ 180k/ano em média",
+      icon: Users,
+      title: "Falta de humanização no atendimento",
+      description: "Respostas robóticas, frias ou atrasadas criam uma experiência ruim e afastam o paciente. Humanizar não é só ser 'simpático' — é responder na hora certa, com empatia e personalização.",
+    },
+    {
+      icon: Users,
+      title: "Equipe sobrecarregada com tarefas repetitivas",
+      description: "Lembretes, reagendamentos, confirmações, pesquisas de satisfação… tudo feito manualmente. O time perde tempo com o que poderia ser automatizado e sobra pouco para encantar o paciente.",
+    },
+    {
+      icon: HelpCircle,
+      title: "Sem clareza do que está funcionando ou não",
+      description: "Não existe um método confiável para saber se os pacientes estão satisfeitos. Sem indicadores claros, o gestor fica no escuro e decisões são tomadas com base em achismos.",
+    },
+    {
+      icon: Star,
+      title: "Poucas avaliações e sem estratégia de mudança",
+      description: "A reputação da clínica no Google fica estagnada. Mesmo com pacientes satisfeitos, não existe um processo automático e natural para transformar isso em avaliações positivas.",
     },
   ];
 
   return (
     <section className="py-10 sm:py-20 px-2 sm:px-4">
-      <div className="container mx-auto max-w-7xl">
+      {/* Margens laterais mais estreitas e largura máxima reduzida para texto mais fluido, seguindo o padrão do site de referência */}
+      <div className="mx-auto max-w-2xl sm:max-w-2xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl px-4 sm:px-6 md:px-8">
         <div className="text-center mb-10 sm:mb-16 space-y-4 animate-fade-in">
           <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold">
-            Seu Maior Prejuízo Não Está no Custo,{" "}
-            <span className="gradient-text">Está no VAZAMENTO</span> de Pacientes.
+            Contrata mais atendentes, treina a equipe - mas nada melhora...
           </h2>
           <p className="text-base sm:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Você investe em tráfego (anúncios), mas perde o paciente nos pontos mais simples. 
-            A Doctoriza resolve esses 3 vazamentos críticos de receita:
+            As falhas no atendimento impactam diretamente o faturamento da clínica. Pacientes desistem antes mesmo de agendar, e a equipe não dá conta de tudo sozinha.
           </p>
         </div>
-
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
-          {/* Left: Leaks */}
+  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-start">
+          {/* Coluna da esquerda: 3 primeiros problemas */}
           <div className="space-y-4 sm:space-y-6">
-            {leaks.map((leak, index) => (
+            {leaks.slice(0, 3).map((leak, index) => (
               <div
                 key={index}
-                className="glass-card-hover p-4 sm:p-6 animate-fade-in"
-                style={{ animationDelay: `${index * 150}ms` }}
+                className="glass-card-hover p-4 sm:p-6 animate-fade-in h-full flex flex-col"
+                style={{ animationDelay: `${index * 120}ms` }}
               >
-                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-                  <div className="flex-shrink-0 flex items-center justify-center mb-2 sm:mb-0">
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-primary/10 flex items-center justify-center">
-                      <leak.icon className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
-                    </div>
+                {/* Ícone acima do título em todas as telas */}
+                <div className="flex justify-start sm:justify-center mb-2">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-2xl bg-destructive/10 flex items-center justify-center">
+                    <leak.icon className="w-4 h-4 sm:w-5 sm:h-5 text-destructive" />
                   </div>
-                  <div className="flex-1 space-y-1 sm:space-y-2">
-                    <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-1 sm:gap-2">
-                      <h3 className="text-lg sm:text-xl font-bold">Vazamento {index + 1}: {leak.title}</h3>
-                      <span className="text-xs sm:text-sm font-medium text-primary whitespace-nowrap">
-                        {leak.stat}
-                      </span>
-                    </div>
-                    <p className="text-muted-foreground leading-relaxed text-sm sm:text-base">
-                      {leak.description}
-                    </p>
-                  </div>
+                </div>
+                <div className="flex-1 flex flex-col">
+                  <h3 className="text-lg sm:text-xl font-bold">
+                    {leak.title}
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed text-sm sm:text-base mt-1 sm:mt-2 !ml-0">
+                    {leak.description}
+                  </p>
                 </div>
               </div>
             ))}
           </div>
-
-          {/* Right: Visual */}
-          <div className="relative animate-fade-in-delay mt-8 lg:mt-0">
-            <div className="glass-card p-3 sm:p-8">
-              <img
-                src={revenueLeakImage}
-                alt="Vazamento de Receita - Infográfico"
-                className="rounded-2xl w-full h-auto max-h-[300px] sm:max-h-none object-cover"
-              />
-            </div>
-            {/* Floating stat */}
-            <div className="absolute -top-6 -right-6 glass-card p-4 sm:p-6 hidden lg:block">
-              <div className="text-2xl sm:text-3xl font-bold text-destructive">-R$ 15k</div>
-              <div className="text-xs sm:text-sm text-muted-foreground">perdidos/mês</div>
-            </div>
+          {/* Coluna da direita: 3 últimos problemas */}
+          <div className="space-y-4 sm:space-y-6">
+            {leaks.slice(3).map((leak, index) => (
+              <div
+                key={index + 3}
+                className="glass-card-hover p-4 sm:p-6 animate-fade-in h-full flex flex-col"
+                style={{ animationDelay: `${(index + 3) * 120}ms` }}
+              >
+                {/* Ícone acima do título em todas as telas */}
+                <div className="flex justify-start sm:justify-center mb-2">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-2xl bg-destructive/10 flex items-center justify-center">
+                    <leak.icon className="w-4 h-4 sm:w-5 sm:h-5 text-destructive" />
+                  </div>
+                </div>
+                <div className="flex-1 flex flex-col">
+                  <h3 className="text-lg sm:text-xl font-bold">
+                    {leak.title}
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed text-sm sm:text-base mt-1 sm:mt-2 !ml-0">
+                    {leak.description}
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
+          {/* Right: Visual removido conforme solicitado */}
         </div>
       </div>
     </section>

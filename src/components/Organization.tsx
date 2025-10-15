@@ -24,7 +24,8 @@ export const Organization = () => {
   return (
     <section className="py-10 sm:py-20 px-2 sm:px-4 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-secondary/10 to-background -z-10" />
-      <div className="container mx-auto max-w-7xl">
+  {/* Margens laterais mais estreitas e largura máxima reduzida para texto mais fluido, seguindo o padrão do site de referência */}
+  <div className="mx-auto max-w-2xl sm:max-w-3xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl px-4 sm:px-6 md:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
           {/* Left: Dashboard Preview */}
           <div className="relative animate-fade-in order-2 lg:order-1 mt-8 lg:mt-0">

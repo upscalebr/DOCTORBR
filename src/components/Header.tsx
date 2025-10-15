@@ -67,14 +67,21 @@ const Header = () => {
   );
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/70 backdrop-blur-md shadow-sm">
-      <div className="container mx-auto px-4 h-16 flex items-center justify-between">
+    <header className="fixed top-4 left-0 right-0 z-50 flex justify-center pointer-events-none">
+      {/* Ajuste a largura máxima do header alterando a classe max-w-6xl abaixo (ex: max-w-5xl, max-w-7xl, etc) */}
+      {/* Para aumentar/diminuir o distanciamento da logo para a borda, altere a classe px-8 abaixo (ex: px-6, px-10, etc) */}
+      <div
+        className="pointer-events-auto w-full max-w-6xl mx-auto h-16 flex items-center justify-between px-8 bg-white/70 backdrop-blur-md shadow-lg rounded-full border border-white/60"
+        style={{
+          boxShadow: '0 4px 24px 0 rgba(0,0,0,0.08)',
+        }}
+      >
         {/* Logo */}
         <a href="/" aria-label="Ir para a página inicial">
           <img 
-            src="https://imgur.com/9QwM9mB.png" 
+            src="https://imgur.com/Je2BQBh.png" 
             alt="Logo Doctoriza" 
-            className="h-9 w-auto cursor-pointer drop-shadow-sm" 
+            className="h-7 w-auto cursor-pointer drop-shadow-sm" 
             style={{ maxWidth: 160 }}
           />
         </a>
@@ -93,7 +100,7 @@ const Header = () => {
         {/* Menu Mobile */}
         <button
           onClick={toggleMenu}
-          className="lg:hidden text-gray-900 hover:text-primary transition-colors p-3 rounded-md hover:bg-accent hover:text-accent-foreground"
+          className="lg:hidden text-gray-900 hover:text-primary transition-colors p-3 rounded-full hover:bg-accent hover:text-accent-foreground"
         >
           {isMenuOpen ? (
             <X className="h-8 w-8" />
