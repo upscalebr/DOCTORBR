@@ -23,7 +23,7 @@ export const Hero = () => {
             </div>
             {/* Para ajustar a margem abaixo da headline no mobile, altere a classe mb-4 abaixo */}
             <h1 className="mt-8 sm:mt-0 mb-0 text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-center">
-              Conheça IZA a Inteligência Artificial que Fecha a Agenda e Abre o Caixa.
+              Eficiência máxima com DoctorIza, a Inteligência Artificial que sua clínica merece
             </h1>
             {/* Subdescrição só no desktop/tablet */}
             <p className="hidden sm:block text-base sm:text-xl text-muted-foreground leading-relaxed text-left">

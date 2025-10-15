@@ -35,34 +35,35 @@ export const FAQ = () => {
   ];
 
   return (
-    <section className="py-10 sm:py-20 px-2 sm:px-4">
-        {/* Margens laterais mais estreitas e largura máxima reduzida para texto mais fluido, seguindo o padrão do site de referência */}
-        <div className="mx-auto max-w-2xl sm:max-w-3xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl px-4 sm:px-6 md:px-8">
-        <div className="text-center mb-8 sm:mb-16 space-y-4 animate-fade-in">
-          <div className="inline-flex items-center gap-2 glass-card px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium mb-2 sm:mb-4">
-            <HelpCircle className="w-4 h-4 text-primary" />
-            <span>Perguntas Frequentes</span>
+    <section className="py-16 bg-transparent">
+        <div className="container mx-auto px-4 max-w-2xl sm:max-w-3xl md:max-w-4xl">
+          <div className="text-center mb-12 space-y-4 animate-fade-in">
+            <div className="inline-flex items-center gap-2 glass-card px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium mb-2 sm:mb-4">
+              <HelpCircle className="w-4 h-4 text-primary" />
+              <span>Perguntas Frequentes</span>
+            </div>
+            <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold">
+              Toda Dúvida Merece{" "}
+              <span className="gradient-text">Transparência</span>.
+            </h2>
           </div>
-          <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold">
-            Toda Dúvida Merece{" "}
-            <span className="gradient-text">Transparência</span>.
-          </h2>
-        </div>
-        <div className="glass-card p-4 sm:p-8 animate-fade-in">
-          <Accordion type="single" collapsible className="w-full">
+          <Accordion type="single" collapsible className="space-y-4">
             {faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`}>
-                <AccordionTrigger className="text-left text-base sm:text-lg font-semibold hover:text-primary transition-colors">
-                  {faq.question}
+              <AccordionItem 
+                key={index} 
+                value={`item-${index}`}
+                className="glass-card border-none overflow-hidden"
+              >
+                <AccordionTrigger className="flex items-center justify-between w-full px-6 py-5 text-base sm:text-lg font-semibold hover:text-primary transition-colors no-underline hover:no-underline active:no-underline">
+                  <span className="text-left w-full">{faq.question}</span>
                 </AccordionTrigger>
-                <AccordionContent className="text-xs sm:text-base text-muted-foreground leading-relaxed">
+                <AccordionContent className="px-6 pb-5 text-muted-foreground text-sm sm:text-base leading-relaxed">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
             ))}
           </Accordion>
         </div>
-      </div>
-    </section>
+      </section>
   );
 };
