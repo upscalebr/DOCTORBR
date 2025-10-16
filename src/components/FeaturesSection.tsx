@@ -575,7 +575,7 @@ const FeaturesSection = () => {
             </div>
             <div className="relative">
               <div className="flex items-center justify-center h-full -mt-6">
-                <img src="https://i.imgur.com/JrPOCB2.gif" alt="Demonstração Doctoriza" className="rounded-xl shadow-lg max-w-full h-auto" />
+                <img src="https://imgur.com/cteAb8N.gif" alt="Demonstração Doctoriza" className="rounded-xl shadow-lg max-w-full h-auto" />
               </div>
             </div>
           </div>
