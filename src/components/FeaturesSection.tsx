@@ -451,47 +451,21 @@ const FeaturesSection = () => {
               
               </div>
               
-              {/* Características do Chatbot */}
-              <div className="flex items-center space-x-4 mt-6 mb-6">
-                <div className="flex items-center text-sm text-muted-foreground">
-                  <Zap className="w-4 h-4 mr-2 text-primary" />
-                  Econômico
-                </div>
-                <div className="flex items-center text-sm text-muted-foreground">
-                  <Clock className="w-4 h-4 mr-2 text-primary" />
-                  Instantâneo
-                </div>
-                <div className="flex items-center text-sm text-muted-foreground">
-                  <Shield className="w-4 h-4 mr-2 text-primary" />
-                  Eficiente
-                </div>
-              </div>
               
-              {/* Botão abaixo da animação */}
-              <div className="text-left">
-                <Button className="text-base sm:text-lg" variant="default" onClick={() => window.location.href = 'https://api.leadconnectorhq.com/widget/booking/L9aalwcym3c2R6jcXdxl'}>
-                  Começar grátis com IA
-                </Button>
-              </div>
             </div>
           </div>
 
           {/* FUNCIONALIDADE 3 */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
-                <Zap className="w-4 h-4 mr-2" />
-                Agilidade Máxima
-              </div>
+              {/* ...balão removido... */}
               <h3 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#1E2020' }}>
                 Sua clínica com mais estrelas no Google: a maneira inteligente de atrair novos pacientes. 
               </h3>
               <p className="text-base sm:text-lg text-muted-foreground mb-6">
                 O segredo para se destacar online? Avaliações de qualidade. Com nossa ferramenta, você coleta feedback dos seus pacientes e, em seguida, estimula quem teve uma ótima experiência a deixar uma avaliação no Google. É um processo inteligente, que garante mais credibilidade e confiança para a sua marca.
               </p>
-              <Button className="text-base sm:text-lg" variant="default" onClick={() => window.location.href = 'https://api.leadconnectorhq.com/widget/booking/L9aalwcym3c2R6jcXdxl'}>
-                Experimente a Agilidade
-              </Button>
+              {/* ...botão removido... */}
             </div>
             <div className="relative">
               <div className="flex items-center justify-center h-full">
@@ -502,10 +476,7 @@ const FeaturesSection = () => {
           {/*  FUNCIONALIDADE 4 */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
-                <Zap className="w-4 h-4 mr-2" />
-                Agilidade Máxima
-              </div>
+              {/* ...balão removido... */}
               <h3 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#1E2020' }}>
                 Transforme dados em decisões inteligentes. 
               </h3>
@@ -522,10 +493,7 @@ const FeaturesSection = () => {
           {/*  FUNCIONALIDADE 5 */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
-                <Zap className="w-4 h-4 mr-2" />
-                Agilidade Máxima
-              </div>
+              {/* ...balão removido... */}
               <h3 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#1E2020' }}>
                 Sua equipe de atendimento no controle, sem estresse. 
               </h3>
@@ -542,10 +510,7 @@ const FeaturesSection = () => {
           {/*  FUNCIONALIDADE 6 */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
-                <Zap className="w-4 h-4 mr-2" />
-                Agilidade Máxima
-              </div>
+              {/* ...balão removido... */}
               <h3 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#1E2020' }}>
                 Comunique-se em escala, sem perder a personalização. 
               </h3>
@@ -562,10 +527,7 @@ const FeaturesSection = () => {
           {/* FUNCIONALIDADE 7 */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
-                <Zap className="w-4 h-4 mr-2" />
-                Agilidade Máxima
-              </div>
+              {/* ...balão removido... */}
               <h3 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#1E2020' }}>
                 Comunique-se em escala, sem perder a personalização. 
               </h3>
