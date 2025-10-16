@@ -127,13 +127,13 @@ const FeaturesSection = () => {
         </div>
 
         {/* Container das Funcionalidades Detalhadas */}
-        <div className="space-y-24">
+  <div className="space-y-24">
           {/* FUNCIONALIDADE 1: Smart Website */}
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 items-center border-b border-gray-200 pb-12">
             {/* Mobile: headline acima do chatbot, subheadline abaixo. Desktop: ordem original */}
             {/* Headline (mobile acima do chatbot, desktop à esquerda) */}
             <div className="block lg:hidden col-span-2 -mb-2">
-              <h3 className="text-2xl sm:text-3xl font-bold mb-4 text-left" style={{ color: '#1E2020' }}>
+              <h3 className="text-2xl sm:text-3xl font-bold -mb-6 text-left" style={{ color: '#1E2020' }}>
                 Agendamentos e Respostas Automáticas que Conquistam
               </h3>
             </div>
@@ -306,9 +306,9 @@ const FeaturesSection = () => {
           </div>
 
           {/* FUNCIONALIDADE 2: Inteligência Artificial */}
-          <div className="grid lg:grid-cols-2 gap-4 lg:gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-4 lg:gap-12 items-center border-b border-gray-200 pb-12">
             <div className="lg:order-1">
-              <h3 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#1E2020' }}>
+              <h3 className="text-2xl sm:text-3xl font-bold mb-4 -mt-12" style={{ color: '#1E2020' }}>
                 Reduza Faltas em até 64% com Lembretes Proativos
               </h3>
               <p className="text-base sm:text-lg text-muted-foreground mb-6">
@@ -456,13 +456,13 @@ const FeaturesSection = () => {
           </div>
 
           {/* FUNCIONALIDADE 3 */}
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 items-center border-b border-gray-200 pb-12">
             <div>
               {/* ...balão removido... */}
-              <h3 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#1E2020' }}>
+              <h3 className="text-2xl sm:text-3xl font-bold mb-4 -mt-12" style={{ color: '#1E2020' }}>
                 Sua clínica com mais estrelas no Google: a maneira inteligente de atrair novos pacientes. 
               </h3>
-              <p className="text-base sm:text-lg text-muted-foreground mb-6">
+              <p className="text-base sm:text-lg text-muted-foreground -mb-6">
                 O segredo para se destacar online? Avaliações de qualidade. Com nossa ferramenta, você coleta feedback dos seus pacientes e, em seguida, estimula quem teve uma ótima experiência a deixar uma avaliação no Google. É um processo inteligente, que garante mais credibilidade e confiança para a sua marca.
               </p>
               {/* ...botão removido... */}
@@ -474,13 +474,13 @@ const FeaturesSection = () => {
             </div>
           </div>
           {/*  FUNCIONALIDADE 4 */}
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 items-center border-b border-gray-200 pb-12">
             <div>
               {/* ...balão removido... */}
-              <h3 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#1E2020' }}>
+              <h3 className="text-2xl sm:text-3xl font-bold mb-4 -mt-12" style={{ color: '#1E2020' }}>
                 Transforme dados em decisões inteligentes. 
               </h3>
-              <p className="text-base sm:text-lg text-muted-foreground mb-6">
+              <p className="text-base sm:text-lg text-muted-foreground -mb-6">
                 Conheça o coração da sua operação com relatórios e indicadores fáceis de entender. Nossos dashboards mostram o que está acontecendo na sua clínica, desde o número de agendamentos até a performance do time. Com essa visão, você identifica oportunidades e toma as melhores decisões para o seu negócio.
               </p>
             </div>
@@ -491,13 +491,13 @@ const FeaturesSection = () => {
             </div>
           </div>
           {/*  FUNCIONALIDADE 5 */}
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 items-center border-b border-gray-200 pb-12">
             <div>
               {/* ...balão removido... */}
-              <h3 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#1E2020' }}>
+              <h3 className="text-2xl sm:text-3xl font-bold mb-4 -mt-14" style={{ color: '#1E2020' }}>
                 Sua equipe de atendimento no controle, sem estresse. 
               </h3>
-              <p className="text-base sm:text-lg text-muted-foreground mb-6">
+              <p className="text-base sm:text-lg text-muted-foreground -mb-12">
                 Chega de pular de uma tela para outra. Centralize todos os atendimentos do WhatsApp, Instagram, site e Messenger em uma única plataforma. Com a nossa Central de Mensagens, sua equipe trabalha de forma mais ágil, usa tags para organizar conversas e tem acesso ao histórico completo de cada paciente. Tudo isso em um só lugar, para um atendimento impecável.
               </p>
             </div>
@@ -508,10 +508,10 @@ const FeaturesSection = () => {
             </div>
           </div>
           {/*  FUNCIONALIDADE 6 */}
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 items-center border-b border-gray-200 pb-12">
             <div>
               {/* ...balão removido... */}
-              <h3 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#1E2020' }}>
+              <h3 className="text-2xl sm:text-3xl font-bold mb-4 -mt-12" style={{ color: '#1E2020' }}>
                 Comunique-se em escala, sem perder a personalização. 
               </h3>
               <p className="text-base sm:text-lg text-muted-foreground mb-0">
@@ -525,10 +525,10 @@ const FeaturesSection = () => {
             </div>
           </div>
           {/* FUNCIONALIDADE 7 */}
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 items-center border-b border-gray-200 pb-12">
             <div>
               {/* ...balão removido... */}
-              <h3 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#1E2020' }}>
+              <h3 className="text-2xl sm:text-3xl font-bold mb-4 -mt-12" style={{ color: '#1E2020' }}>
                 Comunique-se em escala, sem perder a personalização. 
               </h3>
               <p className="text-base sm:text-lg text-muted-foreground mb-0">
