@@ -50,11 +50,12 @@ export const Hero = () => {
                 size="lg"
                 className="text-base sm:text-base group sm:w-1/2 w-full bg-gradient-to-r from-[#9275FE] to-[#652FFF] text-white border-0 shadow-lg hover:brightness-110 transition-all"
                 style={{ backgroundImage: 'linear-gradient(to right, #9275FE, #652FFF)' }}
+                onClick={() => window.open('https://wa.me/5579981335709', '_blank')}
               >
                 Falar com um consultor
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button size="lg" variant="outline" className="text-base sm:text-base sm:w-1/2 w-full">
+              <Button size="lg" variant="outline" className="text-base sm:text-base sm:w-1/2 w-full" onClick={() => window.open('https://wa.me/5579981335709', '_blank')}>
                 <MessageSquare className="mr-2" />
                 Veja a Iza em Ação
               </Button>
@@ -82,14 +83,20 @@ export const Hero = () => {
           size="lg"
           className="text-base group w-full bg-gradient-to-r from-[#9275FE] to-[#652FFF] text-white border-0 shadow-lg hover:brightness-110 transition-all"
           style={{ backgroundImage: 'linear-gradient(to right, #9275FE, #652FFF)' }}
+          onClick={() => window.open('https://wa.me/5579981335709', '_blank')}
         >
           Falar com um consultor
           <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
         </Button>
-        <Button size="lg" variant="outline" className="text-base w-full">
+        <Button size="lg" variant="outline" className="text-base w-full" onClick={() => window.open('https://wa.me/5579981335709', '_blank')}>
           <MessageSquare className="mr-2" />
           Veja a Iza em Ação
         </Button>
+        {/* Texto pequeno e imagem centralizada */}
+        <div className="flex flex-col items-center mt-5">
+          <span className="text-xs text-center text-muted-foreground mb-2">Integre a sua inteligência artificial sem atritos.</span>
+          <img src="https://imgur.com/vaJw1bc.png" alt="Implante IA" className="w-auto h-auto" style={{ maxWidth: '70%' }} />
+        </div>
       </div>
     </div>
         </div>

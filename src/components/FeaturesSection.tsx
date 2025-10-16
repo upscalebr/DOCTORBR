@@ -158,11 +158,11 @@ const FeaturesSection = () => {
                     </div>
                   </div>
                   {/* Chat Messages Area */}
-                  <div ref={chat1.messagesContainerRef} className="p-4 space-y-3 h-48 overflow-y-auto chat-scroll scroll-smooth">
+                                  <div ref={chat1.messagesContainerRef} className="p-4 space-y-3 h-48 overflow-y-auto chat-scroll scroll-smooth" style={{ backgroundColor: '#F8F4EF' }}>
                     {/* Mariana 1 */}
                     {chat1.visibleMessages[0] && (
-                      <div className="flex items-start space-x-3 justify-end animate-fade-in-up">
-                        <div className="liquid-glass-message bg-gradient-to-r from-primary/30 to-accent/30 border border-primary/40 rounded-2xl rounded-tr-sm p-3 max-w-xs shadow-lg">
+                        <div className="flex items-start space-x-3 justify-end animate-fade-in-up">
+                          <div className="rounded-2xl rounded-tr-sm p-3 max-w-xs shadow-lg" style={{ backgroundColor: '#D3FFC7' }}>
                           <p className="text-xs text-gray-800 italic">Olá! Preciso agendar uma consulta.</p>
                         </div>
                         <div className="w-5 h-5 bg-gradient-to-br from-primary to-accent rounded-full flex-shrink-0"></div>
@@ -173,12 +173,12 @@ const FeaturesSection = () => {
                       <div className="flex items-start space-x-3 animate-fade-in-up">
                         <div className="w-5 h-5 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center flex-shrink-0">
                           <img 
-                            src="https://storage.googleapis.com/msgsndr/bwIqmcdNeNlOPKQFF6DF/media/68a56d77f0f9c3eab11cd7d4.png" 
+                            src="https://imgur.com/q2PKrq9.png" 
                             alt="IA Icon" 
                             className="w-2.5 h-2.5"
                           />
                         </div>
-                        <div className="liquid-glass-message bg-white/30 border border-white/40 rounded-2xl rounded-tl-sm p-3 max-w-xs shadow-lg">
+                        <div className="rounded-2xl rounded-tl-sm p-3 max-w-xs shadow-lg" style={{ backgroundColor: 'white' }}>
                           <p className="text-xs text-gray-800">Oi, Mariana! É a Iza, tudo bem? Fico feliz que você escolheu nossa clínica. Para te ajudar a agendar, me diga: qual especialidade você procura?</p>
                         </div>
                       </div>
@@ -186,7 +186,7 @@ const FeaturesSection = () => {
                     {/* Mariana 2 */}
                     {chat1.visibleMessages[2] && (
                       <div className="flex items-start space-x-3 justify-end animate-fade-in-up">
-                        <div className="liquid-glass-message bg-gradient-to-r from-primary/30 to-accent/30 border border-primary/40 rounded-2xl rounded-tr-sm p-3 max-w-xs shadow-lg">
+                        <div className="rounded-2xl rounded-tr-sm p-3 max-w-xs shadow-lg" style={{ backgroundColor: '#D3FFC7' }}>
                           <p className="text-xs text-gray-800">Perfeito! E vocês aceitam convênios? Se não, qual o valor da consulta particular?</p>
                         </div>
                         <div className="w-5 h-5 bg-gradient-to-br from-primary to-accent rounded-full flex-shrink-0"></div>
@@ -197,12 +197,12 @@ const FeaturesSection = () => {
                       <div className="flex items-start space-x-3 animate-fade-in-up">
                         <div className="w-5 h-5 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center flex-shrink-0">
                           <img 
-                            src="https://storage.googleapis.com/msgsndr/bwIqmcdNeNlOPKQFF6DF/media/68a56d77f0f9c3eab11cd7d4.png" 
+                            src="https://imgur.com/q2PKrq9.png" 
                             alt="IA Icon" 
                             className="w-2.5 h-2.5"
                           />
                         </div>
-                        <div className="liquid-glass-message bg-white/30 border border-white/40 rounded-2xl rounded-tl-sm p-3 max-w-xs shadow-lg">
+                        <div className="rounded-2xl rounded-tl-sm p-3 max-w-xs shadow-lg" style={{ backgroundColor: 'white' }}>
                           <p className="text-xs text-gray-800">Sobre convênios, aceitamos Bradesco Saúde, Unimed, SulAmérica e Amil.<br/><br/>Se for particular, a consulta custa R$ 500,00. Você pode pagar com PIX, dinheiro ou cartão.<br/><br/>Quer que eu verifique a disponibilidade de horários para você?</p>
                         </div>
                       </div>
@@ -210,7 +210,7 @@ const FeaturesSection = () => {
                     {/* Mariana 3 */}
                     {chat1.visibleMessages[4] && (
                       <div className="flex items-start space-x-3 justify-end animate-fade-in-up">
-                        <div className="liquid-glass-message bg-gradient-to-r from-primary/30 to-accent/30 border border-primary/40 rounded-2xl rounded-tr-sm p-3 max-w-xs shadow-lg">
+                        <div className="rounded-2xl rounded-tr-sm p-3 max-w-xs shadow-lg" style={{ backgroundColor: '#D3FFC7' }}>
                           <p className="text-xs text-gray-800">Sim! Preciso de um cardiologista. Poderia verificar os horários disponíveis para a semana que vem?</p>
                         </div>
                         <div className="w-5 h-5 bg-gradient-to-br from-primary to-accent rounded-full flex-shrink-0"></div>
@@ -221,12 +221,12 @@ const FeaturesSection = () => {
                       <div className="flex items-start space-x-3 animate-fade-in-up">
                         <div className="w-5 h-5 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center flex-shrink-0">
                           <img 
-                            src="https://storage.googleapis.com/msgsndr/bwIqmcdNeNlOPKQFF6DF/media/68a56d77f0f9c3eab11cd7d4.png" 
+                            src="https://imgur.com/q2PKrq9.png" 
                             alt="IA Icon" 
                             className="w-2.5 h-2.5"
                           />
                         </div>
-                        <div className="liquid-glass-message bg-white/30 border border-white/40 rounded-2xl rounded-tl-sm p-3 max-w-xs shadow-lg">
+                        <div className="rounded-2xl rounded-tl-sm p-3 max-w-xs shadow-lg" style={{ backgroundColor: 'white' }}>
                           <p className="text-xs text-gray-800">Certo, vou verificar! Temos horários disponíveis com o Dr. Pedro Almeida na quinta-feira, dia 24, às 10h ou às 15h. Qual deles fica melhor para você?</p>
                         </div>
                       </div>
@@ -234,7 +234,7 @@ const FeaturesSection = () => {
                     {/* Mariana 4 */}
                     {chat1.visibleMessages[6] && (
                       <div className="flex items-start space-x-3 justify-end animate-fade-in-up">
-                        <div className="liquid-glass-message bg-gradient-to-r from-primary/30 to-accent/30 border border-primary/40 rounded-2xl rounded-tr-sm p-3 max-w-xs shadow-lg">
+                        <div className="rounded-2xl rounded-tr-sm p-3 max-w-xs shadow-lg" style={{ backgroundColor: '#D3FFC7' }}>
                           <p className="text-xs text-gray-800">A quinta às 15h está ótimo! Ele atende pela Unimed?</p>
                         </div>
                         <div className="w-5 h-5 bg-gradient-to-br from-primary to-accent rounded-full flex-shrink-0"></div>
@@ -245,12 +245,12 @@ const FeaturesSection = () => {
                       <div className="flex items-start space-x-3 animate-fade-in-up">
                         <div className="w-5 h-5 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center flex-shrink-0">
                           <img 
-                            src="https://storage.googleapis.com/msgsndr/bwIqmcdNeNlOPKQFF6DF/media/68a56d77f0f9c3eab11cd7d4.png" 
+                            src="https://imgur.com/q2PKrq9.png" 
                             alt="IA Icon" 
                             className="w-2.5 h-2.5"
                           />
                         </div>
-                        <div className="liquid-glass-message bg-white/30 border border-white/40 rounded-2xl rounded-tl-sm p-3 max-w-xs shadow-lg">
+                        <div className="rounded-2xl rounded-tl-sm p-3 max-w-xs shadow-lg" style={{ backgroundColor: 'white' }}>
                           <p className="text-xs text-gray-800">Sim, o Dr. Pedro Almeida atende pela Unimed. Já reservei seu horário para quinta-feira, 24 de outubro, às 15h.<br/><br/>A clínica fica na Rua das Flores, 123. Se precisar de mais alguma informação, é só falar comigo! Te espero aqui!</p>
                         </div>
                       </div>
@@ -258,7 +258,7 @@ const FeaturesSection = () => {
                     {/* Mariana 5 */}
                     {chat1.visibleMessages[8] && (
                       <div className="flex items-start space-x-3 justify-end animate-fade-in-up">
-                        <div className="liquid-glass-message bg-gradient-to-r from-primary/30 to-accent/30 border border-primary/40 rounded-2xl rounded-tr-sm p-3 max-w-xs shadow-lg">
+                        <div className="rounded-2xl rounded-tr-sm p-3 max-w-xs shadow-lg" style={{ backgroundColor: '#D3FFC7' }}>
                           <p className="text-xs text-gray-800">Obrigada, boa noite!</p>
                         </div>
                         <div className="w-5 h-5 bg-gradient-to-br from-primary to-accent rounded-full flex-shrink-0"></div>
@@ -269,12 +269,12 @@ const FeaturesSection = () => {
                       <div className="flex items-start space-x-3 animate-fade-in-up">
                         <div className="w-5 h-5 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center flex-shrink-0">
                           <img 
-                            src="https://storage.googleapis.com/msgsndr/bwIqmcdNeNlOPKQFF6DF/media/68a56d77f0f9c3eab11cd7d4.png" 
+                            src="https://imgur.com/q2PKrq9.png" 
                             alt="IA Icon" 
                             className="w-2.5 h-2.5"
                           />
                         </div>
-                        <div className="liquid-glass-message bg-white/20 border border-white/30 rounded-2xl rounded-tl-sm p-2">
+                        <div className="rounded-2xl rounded-tl-sm p-2" style={{ backgroundColor: 'white' }}>
                           <div className="flex space-x-1">
                             <div className="w-1 h-1 bg-gray-400 rounded-full animate-bounce"></div>
                             <div className="w-1 h-1 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '0.1s' }}></div>
@@ -338,18 +338,18 @@ const FeaturesSection = () => {
                   </div>
                 </div>
                 {/* Chat Messages Area */}
-                <div ref={chat2.messagesContainerRef} className="p-4 space-y-3 h-48 overflow-y-auto chat-scroll scroll-smooth">
+                <div ref={chat2.messagesContainerRef} className="p-4 space-y-3 h-48 overflow-y-auto chat-scroll scroll-smooth" style={{ backgroundColor: '#F8F4EF' }}>
                   {/* Iza 1 */}
                   {chat2.visibleMessages[0] && (
                     <div className="flex items-start space-x-3 animate-fade-in-up">
                       <div className="w-5 h-5 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center flex-shrink-0">
                         <img 
-                          src="https://storage.googleapis.com/msgsndr/bwIqmcdNeNlOPKQFF6DF/media/68a56d77f0f9c3eab11cd7d4.png" 
+                          src="https://imgur.com/q2PKrq9.png" 
                           alt="IA Icon" 
                           className="w-2.5 h-2.5"
                         />
                       </div>
-                      <div className="liquid-glass-message bg-white/30 border border-white/40 rounded-2xl rounded-tl-sm p-3 max-w-xs shadow-lg">
+                      <div className="rounded-2xl rounded-tl-sm p-3 max-w-xs shadow-lg" style={{ backgroundColor: 'white' }}>
                         <p className="text-xs text-gray-800">Olá, Luana, tudo bem?<br/><br/>Passando aqui só para lembrar que amanhã (26/08) às 14:00 tem uma consulta agendada conosco para a área de ortopedia.<br/><br/>Endereço: Rua teste, 123<br/>Bairro: Bela Vista - SP<br/><br/>Até amanhã! Obrigada!</p>
                       </div>
                     </div>
@@ -357,7 +357,7 @@ const FeaturesSection = () => {
                   {/* Luana 1 */}
                   {chat2.visibleMessages[1] && (
                     <div className="flex items-start space-x-3 justify-end animate-fade-in-up">
-                      <div className="liquid-glass-message bg-gradient-to-r from-primary/30 to-accent/30 border border-primary/40 rounded-2xl rounded-tr-sm p-3 max-w-xs shadow-lg">
+                      <div className="rounded-2xl rounded-tr-sm p-3 max-w-xs shadow-lg" style={{ backgroundColor: '#D3FFC7' }}>
                         <p className="text-xs text-gray-800">Oi Iza, tudo bem? Acabei de perceber que não vou conseguir ir.</p>
                       </div>
                       <div className="w-5 h-5 bg-gradient-to-br from-primary to-accent rounded-full flex-shrink-0"></div>
@@ -368,12 +368,12 @@ const FeaturesSection = () => {
                     <div className="flex items-start space-x-3 animate-fade-in-up">
                       <div className="w-5 h-5 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center flex-shrink-0">
                         <img 
-                          src="https://storage.googleapis.com/msgsndr/bwIqmcdNeNlOPKQFF6DF/media/68a56d77f0f9c3eab11cd7d4.png" 
+                          src="https://imgur.com/q2PKrq9.png" 
                           alt="IA Icon" 
                           className="w-2.5 h-2.5"
                         />
                       </div>
-                      <div className="liquid-glass-message bg-white/30 border border-white/40 rounded-2xl rounded-tl-sm p-3 max-w-xs shadow-lg">
+                      <div className="rounded-2xl rounded-tl-sm p-3 max-w-xs shadow-lg" style={{ backgroundColor: 'white' }}>
                         <p className="text-xs text-gray-800">Tudo bem, Lu! Que bom que você avisou! Sem problemas, já entendi que você precisa remarcar. Podemos verificar um novo dia e horário para você.</p>
                       </div>
                     </div>
@@ -381,7 +381,7 @@ const FeaturesSection = () => {
                   {/* Luana 2 */}
                   {chat2.visibleMessages[3] && (
                     <div className="flex items-start space-x-3 justify-end animate-fade-in-up">
-                      <div className="liquid-glass-message bg-gradient-to-r from-primary/30 to-accent/30 border border-primary/40 rounded-2xl rounded-tr-sm p-3 max-w-xs shadow-lg">
+                      <div className="rounded-2xl rounded-tr-sm p-3 max-w-xs shadow-lg" style={{ backgroundColor: '#D3FFC7' }}>
                         <p className="text-xs text-gray-800">Ótimo! Poderia me ajudar?</p>
                       </div>
                       <div className="w-5 h-5 bg-gradient-to-br from-primary to-accent rounded-full flex-shrink-0"></div>
@@ -392,12 +392,12 @@ const FeaturesSection = () => {
                     <div className="flex items-start space-x-3 animate-fade-in-up">
                       <div className="w-5 h-5 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center flex-shrink-0">
                         <img 
-                          src="https://storage.googleapis.com/msgsndr/bwIqmcdNeNlOPKQFF6DF/media/68a56d77f0f9c3eab11cd7d4.png" 
+                          src="https://imgur.com/q2PKrq9.png" 
                           alt="IA Icon" 
                           className="w-2.5 h-2.5"
                         />
                       </div>
-                      <div className="liquid-glass-message bg-white/30 border border-white/40 rounded-2xl rounded-tl-sm p-3 max-w-xs shadow-lg">
+                      <div className="rounded-2xl rounded-tl-sm p-3 max-w-xs shadow-lg" style={{ backgroundColor: 'white' }}>
                         <p className="text-xs text-gray-800">Claro! A sua consulta era com o Doutor Rodrigo, certo? Ele tem horários disponíveis na próxima quarta-feira, dia 03/09, às 14h ou às 16h. Qual seria a sua preferência?</p>
                       </div>
                     </div>
@@ -405,7 +405,7 @@ const FeaturesSection = () => {
                   {/* Luana 3 */}
                   {chat2.visibleMessages[5] && (
                     <div className="flex items-start space-x-3 justify-end animate-fade-in-up">
-                      <div className="liquid-glass-message bg-gradient-to-r from-primary/30 to-accent/30 border border-primary/40 rounded-2xl rounded-tr-sm p-3 max-w-xs shadow-lg">
+                      <div className="rounded-2xl rounded-tr-sm p-3 max-w-xs shadow-lg" style={{ backgroundColor: '#D3FFC7' }}>
                         <p className="text-xs text-gray-800">Perfeito! Pode ser às 16h.</p>
                       </div>
                       <div className="w-5 h-5 bg-gradient-to-br from-primary to-accent rounded-full flex-shrink-0"></div>
@@ -416,12 +416,12 @@ const FeaturesSection = () => {
                     <div className="flex items-start space-x-3 animate-fade-in-up">
                       <div className="w-5 h-5 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center flex-shrink-0">
                         <img 
-                          src="https://storage.googleapis.com/msgsndr/bwIqmcdNeNlOPKQFF6DF/media/68a56d77f0f9c3eab11cd7d4.png" 
+                          src="https://imgur.com/q2PKrq9.png" 
                           alt="IA Icon" 
                           className="w-2.5 h-2.5"
                         />
                       </div>
-                      <div className="liquid-glass-message bg-white/30 border border-white/40 rounded-2xl rounded-tl-sm p-3 max-w-xs shadow-lg">
+                      <div className="rounded-2xl rounded-tl-sm p-3 max-w-xs shadow-lg" style={{ backgroundColor: 'white' }}>
                         <p className="text-xs text-gray-800">Consulta remarcada, Luana! Seu novo horário com o Doutor Rodrigo é na quarta-feira, 03 de setembro, às 16h.<br/><br/>Qualquer coisa, é só me chamar por aqui. Tenha um ótimo dia!</p>
                       </div>
                     </div>
@@ -431,7 +431,7 @@ const FeaturesSection = () => {
                     <div className="flex items-start space-x-3 animate-fade-in-up">
                       <div className="w-5 h-5 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center flex-shrink-0">
                         <img 
-                          src="https://storage.googleapis.com/msgsndr/bwIqmcdNeNlOPKQFF6DF/media/68a56d77f0f9c3eab11cd7d4.png" 
+                          src="https://imgur.com/q2PKrq9.png" 
                           alt="IA Icon" 
                           className="w-2.5 h-2.5"
                         />

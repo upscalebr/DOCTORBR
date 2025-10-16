@@ -48,6 +48,7 @@ export const IzaSolution = () => {
           <Button
             size="lg"
             className="text-base sm:text-lg w-[270px] sm:w-auto !bg-[#1E2020] hover:!bg-[#232525] border-none mx-auto mb-6"
+            onClick={() => window.open('https://wa.me/5579981335709', '_blank')}
           >
             Quero aumentar minha conversão
           </Button>
