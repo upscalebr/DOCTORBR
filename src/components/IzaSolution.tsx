@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Clock, Heart, MessageCircle } from "lucide-react";
+
 import izaAvatar from "@/assets/iza-avatar.jpg";
+import IzaAtendendo from "@/assets/IZAATENDENDO.png";
 
 export const IzaSolution = () => {
   const features = [
@@ -34,7 +36,7 @@ export const IzaSolution = () => {
                 Automatize o atendimento, humanize a comunicação e transforme seu WhatsApp e seu Instagram em uma máquina de agendamentos.
               </p>
               <img
-                src="https://i.imgur.com/0tT7SvA.png"
+                src={IzaAtendendo}
                 alt="Demonstração Doctoriza"
                 className="mx-auto my-6 w-full max-w-xl rounded-xl shadow-lg"
               />

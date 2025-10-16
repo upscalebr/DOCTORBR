@@ -67,7 +67,7 @@ const Header = () => {
   );
 
   return (
-    <header className="fixed top-4 left-0 right-0 z-50 flex justify-center pointer-events-none">
+  <header className="fixed top-3 sm:top-4 left-0 right-0 z-50 flex justify-center pointer-events-none">
       {/* Ajuste a largura máxima do header alterando a classe max-w-6xl abaixo (ex: max-w-5xl, max-w-7xl, etc) */}
       {/* Para aumentar/diminuir o distanciamento da logo para a borda, altere a classe px-8 abaixo (ex: px-6, px-10, etc) */}
       <div

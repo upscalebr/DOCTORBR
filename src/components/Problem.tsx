@@ -39,11 +39,11 @@ export const Problem = () => {
     <section className="py-10 sm:py-20 px-2 sm:px-4">
       {/* Margens laterais mais estreitas e largura máxima reduzida para texto mais fluido, seguindo o padrão do site de referência */}
       <div className="mx-auto max-w-2xl sm:max-w-2xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl px-4 sm:px-6 md:px-8">
-        <div className="text-center mb-10 sm:mb-16 space-y-4 animate-fade-in">
-          <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold">
-            Contrata mais atendentes, treina a equipe - mas nada melhora...
+        <div className="text-left sm:text-center mb-10 sm:mb-16 space-y-4 animate-fade-in">
+          <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold text-left sm:text-center">
+            Contrata, treina, mas nada muda...
           </h2>
-          <p className="text-base sm:text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-base sm:text-xl text-muted-foreground w-full text-left sm:text-center">
             As falhas no atendimento impactam diretamente o faturamento da clínica. Pacientes desistem antes mesmo de agendar, e a equipe não dá conta de tudo sozinha.
           </p>
         </div>

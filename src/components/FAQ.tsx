@@ -38,7 +38,7 @@ export const FAQ = () => {
     <section className="py-16 bg-transparent">
         <div className="container mx-auto px-4 max-w-2xl sm:max-w-3xl md:max-w-4xl">
           <div className="text-center mb-12 space-y-4 animate-fade-in">
-            <div className="inline-flex items-center gap-2 glass-card px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium mb-2 sm:mb-4">
+            <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium mb-2 sm:mb-4">
               <HelpCircle className="w-4 h-4 text-primary" />
               <span>Perguntas Frequentes</span>
             </div>
@@ -47,12 +47,12 @@ export const FAQ = () => {
               <span className="gradient-text">Transparência</span>.
             </h2>
           </div>
-          <Accordion type="single" collapsible className="space-y-4">
+          <Accordion type="single" collapsible className="divide-y divide-gray-200 border border-gray-100 rounded-xl overflow-hidden">
             {faqs.map((faq, index) => (
               <AccordionItem 
                 key={index} 
                 value={`item-${index}`}
-                className="glass-card border-none overflow-hidden"
+                className="border-none overflow-hidden bg-white"
               >
                 <AccordionTrigger className="flex items-center justify-between w-full px-6 py-5 text-base sm:text-lg font-semibold text-black hover:text-black focus:text-black transition-colors no-underline hover:no-underline active:no-underline">
                   <span className="text-left w-full">{faq.question}</span>

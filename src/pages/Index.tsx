@@ -10,6 +10,7 @@ import { InvestmentControl } from "@/components/InvestmentControl";
 import { Credibility } from "@/components/Credibility";
 import { FAQ } from "@/components/FAQ";
 import { FinalCTA } from "@/components/FinalCTA";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -26,7 +27,8 @@ const Index = () => {
       {false && <InvestmentControl />}
       {false && <Credibility />}
       <FAQ />
-      <FinalCTA />
+  <FinalCTA />
+  <Footer />
     </div>
   );
 };

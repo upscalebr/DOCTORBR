@@ -143,17 +143,17 @@ const FeaturesSection = () => {
               <div className="relative p-1 rounded-3xl backdrop-blur-md border border-white/10 shadow-xl">
                 {/* Chat Container - Liquid Glass Effect */}
                 <div className="relative rounded-3xl overflow-hidden liquid-glass">
-                  {/* Chat Header */}
-                  <div className="bg-white/10 backdrop-blur-sm border-b border-white/20 p-4 flex items-center space-x-3">
-                    <div className="w-8 h-8 rounded-full overflow-hidden flex-shrink-0">
+                  {/* Chat Header - Cabeçalho */}
+                  <div className="bg-white/10 backdrop-blur-sm border-b border-black/5 p-4 flex items-center space-x-3">
+                    <div className="w-10 h-10 rounded-full overflow-hidden flex-shrink-0">
                       <img 
-                        src="https://randomuser.me/api/portraits/women/44.jpg" 
+                        src="https://imgur.com/q2PKrq9.png" 
                         alt="Mariana" 
                         className="w-full h-full object-cover"
                       />
                     </div>
                     <div>
-                      <p className="text-sm font-medium text-gray-800">Mariana</p>
+                      <p className="text-sm font-medium text-gray-800 -mb-1">Sua Clinica Aqui</p>
                       <p className="text-xs text-gray-600">Online agora</p>
                     </div>
                   </div>
@@ -323,17 +323,17 @@ const FeaturesSection = () => {
                 {/* Chat Container - Liquid Glass Effect */}
                 <div className="relative rounded-3xl overflow-hidden liquid-glass">
                 
-                {/* Chat Header */}
-                <div className="bg-white/10 backdrop-blur-sm border-b border-white/20 p-4 flex items-center space-x-3">
-                  <div className="w-8 h-8 rounded-full overflow-hidden flex-shrink-0">
+                {/* Chat Header Cabeçalho 2 */}
+                <div className="bg-white/10 backdrop-blur-sm border-b border-black/5 p-4 flex items-center space-x-3">
+                  <div className="w-10 h-10 rounded-full overflow-hidden flex-shrink-0">
                     <img 
-                      src="https://randomuser.me/api/portraits/women/65.jpg" 
+                      src="https://imgur.com/q2PKrq9.png" 
                       alt="Luana" 
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <div>
-                    <p className="text-sm font-medium text-gray-800">Luana</p>
+                    <p className="text-sm font-medium text-gray-800">Sua Clinica Aqui</p>
                     <p className="text-xs text-gray-600">Online agora</p>
                   </div>
                 </div>
