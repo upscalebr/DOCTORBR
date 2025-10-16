@@ -130,32 +130,15 @@ const FeaturesSection = () => {
         <div className="space-y-24">
           {/* FUNCIONALIDADE 1: Smart Website */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="order-2 lg:order-1">
-              <h3 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#1E2020' }}>
+            {/* Mobile: headline acima do chatbot, subheadline abaixo. Desktop: ordem original */}
+            {/* Headline (mobile acima do chatbot, desktop à esquerda) */}
+            <div className="block lg:hidden col-span-2 -mb-2">
+              <h3 className="text-2xl sm:text-3xl font-bold mb-4 text-left" style={{ color: '#1E2020' }}>
                 Agendamentos e Respostas Automáticas que Conquistam
               </h3>
-              <p className="text-base sm:text-lg text-muted-foreground mb-6">
-                Enquanto sua equipe se dedica ao que realmente importa, a inteligência artificial da Doctoriza interage com pacientes via WhatsApp, gerencia agendamentos diretamente no Google Agenda e otimiza sua comunicação. Zero erros, zero duplicidade, total eficiência.
-              </p>
-              <div className="flex items-center space-x-4 mb-6">
-                <div className="flex items-center text-sm text-muted-foreground">
-                  <Smartphone className="w-4 h-4 mr-2 text-primary" />
-                  Responsivo
-                </div>
-                <div className="flex items-center text-sm text-muted-foreground">
-                  <Clock className="w-4 h-4 mr-2 text-primary" />
-                  Pronto em minutos
-                </div>
-                <div className="flex items-center text-sm text-muted-foreground">
-                  <Shield className="w-4 h-4 mr-2 text-primary" />
-                  Seguro
-                </div>
-              </div>
-              <Button className="text-base sm:text-lg" variant="default" onClick={() => window.location.href = 'https://api.leadconnectorhq.com/widget/booking/L9aalwcym3c2R6jcXdxl'}>
-                Crie seu Website Grátis
-              </Button>
             </div>
-            <div className="lg:order-2 relative" ref={chat1.chatRef}>
+            {/* Chatbot (mobile acima da subheadline, desktop à direita) */}
+            <div className="lg:order-2 relative col-span-2 lg:col-span-1" ref={chat1.chatRef}>
               {/* Moldura Liquid Glass (Chat 1) */}
               <div className="relative p-1 rounded-3xl backdrop-blur-md border border-white/10 shadow-xl">
                 {/* Chat Container - Liquid Glass Effect */}
@@ -304,6 +287,22 @@ const FeaturesSection = () => {
                 </div>
               </div>
             </div>
+            {/* Headline e subheadline para desktop (à esquerda) */}
+            <div className="hidden lg:block lg:order-1">
+              <h3 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#1E2020' }}>
+                Agendamentos e Respostas Automáticas que Conquistam
+              </h3>
+              <p className="text-base sm:text-lg text-muted-foreground mb-6">
+                Enquanto sua equipe se dedica ao que realmente importa, a inteligência artificial da Doctoriza interage com pacientes via WhatsApp, gerencia agendamentos diretamente no Google Agenda e otimiza sua comunicação. Zero erros, zero duplicidade, total eficiência.
+              </p>
+            </div>
+          {/* End of first feature block */}
+          {/* Subheadline (mobile abaixo do chatbot) */}
+          <div className="block lg:hidden col-span-2 -mt-2">
+            <p className="text-base sm:text-lg text-muted-foreground mb-6 text-left">
+              Enquanto sua equipe se dedica ao que realmente importa, a inteligência artificial da Doctoriza interage com pacientes via WhatsApp, gerencia agendamentos diretamente no Google Agenda e otimiza sua comunicação. Zero erros, zero duplicidade, total eficiência.
+            </p>
+          </div>
           </div>
 
           {/* FUNCIONALIDADE 2: Inteligência Artificial */}
@@ -477,7 +476,7 @@ const FeaturesSection = () => {
             </div>
           </div>
 
-          {/* FUNCIONALIDADE 3: Agilidade Máxima */}
+          {/* FUNCIONALIDADE 3 */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
@@ -485,36 +484,98 @@ const FeaturesSection = () => {
                 Agilidade Máxima
               </div>
               <h3 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#1E2020' }}>
-                Equipe Focada no Paciente: Deixe a IA Gerenciar o Inesperado 
+                Sua clínica com mais estrelas no Google: a maneira inteligente de atrair novos pacientes. 
               </h3>
               <p className="text-base sm:text-lg text-muted-foreground mb-6">
-                Quando uma situação exige toque humano, a Doctoriza aciona sua equipe via Telegram, transferindo o contexto completo da conversa. E com o Assistente Interno, você gerencia agendas e tarefas com comandos de voz, mantendo o controle total da sua clínica, sem interrupções.
+                O segredo para se destacar online? Avaliações de qualidade. Com nossa ferramenta, você coleta feedback dos seus pacientes e, em seguida, estimula quem teve uma ótima experiência a deixar uma avaliação no Google. É um processo inteligente, que garante mais credibilidade e confiança para a sua marca.
               </p>
               <Button className="text-base sm:text-lg" variant="default" onClick={() => window.location.href = 'https://api.leadconnectorhq.com/widget/booking/L9aalwcym3c2R6jcXdxl'}>
                 Experimente a Agilidade
               </Button>
             </div>
             <div className="relative">
-              <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-accent/20 rounded-2xl blur-xl"></div>
-              <div className="relative bg-gradient-to-br from-card to-muted p-6 rounded-2xl border">
-                <div className="space-y-3">
-                  <div className="flex items-center justify-between p-3 bg-primary/5 rounded-lg">
-                    <span className="text-sm font-medium">Agendar Corte</span>
-                    <Zap className="w-4 h-4 text-primary" />
-                  </div>
-                  <div className="grid grid-cols-3 gap-2">
-                    <div className="h-8 bg-gray-200 rounded flex items-center justify-center text-xs text-gray-700">Seg</div>
-                    <div className="h-8 bg-black rounded flex items-center justify-center text-xs text-white">Ter</div>
-                    <div className="h-8 bg-gray-200 rounded flex items-center justify-center text-xs text-gray-700">Qua</div>
-                  </div>
-                  <div className="p-3 bg-gray-50 rounded-lg">
-                    <div className="text-xs text-muted-foreground mb-2">Horários disponíveis</div>
-                    <div className="grid grid-cols-2 gap-2">
-                      <div className="h-6 bg-gray-200 rounded text-xs flex items-center justify-center text-gray-700">09:00</div>
-                      <div className="h-6 bg-black rounded text-xs flex items-center justify-center text-white">10:30</div>
-                    </div>
-                  </div>
-                </div>
+              <div className="flex items-center justify-center h-full">
+                <img src="https://imgur.com/BBljgGW.png" alt="Demonstração Doctoriza" className="rounded-xl shadow-lg max-w-full h-auto" />
+              </div>
+            </div>
+          </div>
+          {/*  FUNCIONALIDADE 4 */}
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
+                <Zap className="w-4 h-4 mr-2" />
+                Agilidade Máxima
+              </div>
+              <h3 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#1E2020' }}>
+                Transforme dados em decisões inteligentes. 
+              </h3>
+              <p className="text-base sm:text-lg text-muted-foreground mb-6">
+                Conheça o coração da sua operação com relatórios e indicadores fáceis de entender. Nossos dashboards mostram o que está acontecendo na sua clínica, desde o número de agendamentos até a performance do time. Com essa visão, você identifica oportunidades e toma as melhores decisões para o seu negócio.
+              </p>
+            </div>
+            <div className="relative">
+              <div className="flex items-center justify-center h-full">
+                <img src="https://imgur.com/5V1Gcvl.png" alt="Demonstração Doctoriza" className="rounded-xl shadow-lg max-w-full h-auto" />
+              </div>
+            </div>
+          </div>
+          {/*  FUNCIONALIDADE 5 */}
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
+                <Zap className="w-4 h-4 mr-2" />
+                Agilidade Máxima
+              </div>
+              <h3 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#1E2020' }}>
+                Sua equipe de atendimento no controle, sem estresse. 
+              </h3>
+              <p className="text-base sm:text-lg text-muted-foreground mb-6">
+                Chega de pular de uma tela para outra. Centralize todos os atendimentos do WhatsApp, Instagram, site e Messenger em uma única plataforma. Com a nossa Central de Mensagens, sua equipe trabalha de forma mais ágil, usa tags para organizar conversas e tem acesso ao histórico completo de cada paciente. Tudo isso em um só lugar, para um atendimento impecável.
+              </p>
+            </div>
+            <div className="relative">
+              <div className="flex items-center justify-center h-full">
+                <img src="https://imgur.com/8ijKfkL.png" alt="Demonstração Doctoriza" className="rounded-xl shadow-lg max-w-full h-auto" />
+              </div>
+            </div>
+          </div>
+          {/*  FUNCIONALIDADE 6 */}
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
+                <Zap className="w-4 h-4 mr-2" />
+                Agilidade Máxima
+              </div>
+              <h3 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#1E2020' }}>
+                Comunique-se em escala, sem perder a personalização. 
+              </h3>
+              <p className="text-base sm:text-lg text-muted-foreground mb-0">
+                Envie campanhas de marketing, lembretes ou comunicados para milhares de pacientes com apenas alguns cliques. Nossa ferramenta permite que você segmente a base de contatos por status (ativos, inativos) ou por tags personalizadas. É a forma mais fácil e eficiente de reativar pacientes e divulgar suas ações especiais.
+              </p>
+            </div>
+            <div className="relative">
+              <div className="flex items-center justify-center h-full -mt-6">
+                <img src="https://i.imgur.com/JrPOCB2.gif" alt="Demonstração Doctoriza" className="rounded-xl shadow-lg max-w-full h-auto" />
+              </div>
+            </div>
+          </div>
+          {/* FUNCIONALIDADE 7 */}
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
+                <Zap className="w-4 h-4 mr-2" />
+                Agilidade Máxima
+              </div>
+              <h3 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#1E2020' }}>
+                Comunique-se em escala, sem perder a personalização. 
+              </h3>
+              <p className="text-base sm:text-lg text-muted-foreground mb-0">
+                Envie campanhas de marketing, lembretes ou comunicados para milhares de pacientes com apenas alguns cliques. Nossa ferramenta permite que você segmente a base de contatos por status (ativos, inativos) ou por tags personalizadas. É a forma mais fácil e eficiente de reativar pacientes e divulgar suas ações especiais.
+              </p>
+            </div>
+            <div className="relative">
+              <div className="flex items-center justify-center h-full -mt-6">
+                <img src="https://i.imgur.com/JrPOCB2.gif" alt="Demonstração Doctoriza" className="rounded-xl shadow-lg max-w-full h-auto" />
               </div>
             </div>
           </div>

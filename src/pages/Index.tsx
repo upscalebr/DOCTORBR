@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import { Problem } from "@/components/Problem";
 import { IzaSolution } from "@/components/IzaSolution";
 import FeaturesSection from "@/components/FeaturesSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
 import { AntiNoShow } from "@/components/AntiNoShow";
 import { Organization } from "@/components/Organization";
 import { InvestmentControl } from "@/components/InvestmentControl";
@@ -17,7 +18,8 @@ const Index = () => {
       <Hero />
       <Problem />
       <IzaSolution />
-      <FeaturesSection />
+  <FeaturesSection />
+  <TestimonialsSection />
       {/* Seções temporariamente desativadas */}
       {false && <AntiNoShow />}
       {false && <Organization />}
