@@ -40,6 +40,13 @@ const Header = () => {
           {/* Navigation Links (ajuste conforme as seções do seu site) */}
           <nav className="flex flex-col space-y-6 mt-4">
             <a 
+              href="/planos" 
+              onClick={closeMenu}
+              className="text-xl font-medium text-gray-800 hover:text-primary transition-colors py-3 border-b border-gray-100"
+            >
+              Planos
+            </a>
+            <a 
               href="#features" 
               onClick={closeMenu}
               className="text-xl font-medium text-gray-800 hover:text-primary transition-colors py-3 border-b border-gray-100"
@@ -87,6 +94,9 @@ const Header = () => {
         </a>
         {/* Navegação Desktop */}
         <nav className="hidden lg:flex items-center space-x-8">
+          <a href="/planos" className="text-gray-700 hover:text-primary transition-colors font-medium">
+            Planos
+          </a>
           <a href="#features" className="text-gray-700 hover:text-primary transition-colors font-medium">
             Funcionalidades
           </a>
